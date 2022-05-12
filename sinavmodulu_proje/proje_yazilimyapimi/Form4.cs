@@ -37,5 +37,24 @@ namespace proje_yazilimyapimi
             this.Hide();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 gecis = new Form3();
+            gecis.Show();
+            this.Hide();
+        }
+
+        private void btnsoruislemleri_Click(object sender, EventArgs e)
+        {
+            soruEkle gecis = new soruEkle();
+            this.Hide();
+            gecis.Show();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -67,11 +67,15 @@ namespace proje_yazilimyapimi
         }
 
         private void btnsil_Click(object sender, EventArgs e)
-        {
-            string sorgu = "DELETE FROM newkullanici WHERE id=@id";
+        { 
+
+
+
+            // where username=@username  ---- id=@id
+            string sorgu = "DELETE FROM newkullanici WHERE username=@username";
             komut = new SqlCommand(sorgu, baglanti);
-            
-            komut.Parameters.AddWithValue("@id",Convert.ToInt32(txtid.Text)); 
+            // @username ----- @id    txtid.text
+            komut.Parameters.AddWithValue("@username",(txtkullaniciadikayit.Text)); 
             baglanti.Open();
             komut.ExecuteNonQuery();
             baglanti.Close();
@@ -80,6 +84,8 @@ namespace proje_yazilimyapimi
 
         private void btnguncelle_Click(object sender, EventArgs e)
         {
+
+            // where username =@username ----- id=@id
             string sorgu = "UPDATE newkullanici SET username=@username,password=@password WHERE id=@id";
             komut = new SqlCommand(sorgu, baglanti);
             komut.Parameters.AddWithValue("@id", Convert.ToInt32(txtid.Text));
@@ -91,6 +97,13 @@ namespace proje_yazilimyapimi
             Kullanicigetir();
         
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form4 gecis = new Form4();
+            gecis.Show();
+            this.Hide();
         }
     }
 }

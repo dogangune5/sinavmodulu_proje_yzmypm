@@ -63,5 +63,12 @@ namespace proje_yazilimyapimi
 
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 gecis = new Form2();
+            gecis.Show();
+            this.Hide();
+        }
     }
 }

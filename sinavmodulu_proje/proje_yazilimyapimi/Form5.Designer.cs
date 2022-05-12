@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,6 +42,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.labelid = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,11 +159,30 @@
             // 
             // txtid
             // 
-            this.txtid.Enabled = false;
             this.txtid.Location = new System.Drawing.Point(306, 175);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(312, 39);
             this.txtid.TabIndex = 13;
+            // 
+            // button1
+            // 
+            this.button1.ImageKey = "png-clipart-computer-keyboard-backspace-arrow-computer-icons-arrow-cdr-angle-thum" +
+    "bnail.png";
+            this.button1.ImageList = this.ımageList1;
+            this.button1.Location = new System.Drawing.Point(2, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(41, 36);
+            this.button1.TabIndex = 14;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "png-clipart-computer-keyboard-backspace-arrow-computer-icons-arrow-cdr-angle-thum" +
+        "bnail.png");
             // 
             // Form5
             // 
@@ -167,6 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
             this.ClientSize = new System.Drawing.Size(974, 786);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.labelid);
             this.Controls.Add(this.dataGridView1);
@@ -202,5 +226,7 @@
         private DataGridView dataGridView1;
         private Label labelid;
         private TextBox txtid;
+        private Button button1;
+        private ImageList ımageList1;
     }
 }

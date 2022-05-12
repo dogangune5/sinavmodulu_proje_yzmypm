@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gfZ0R/LJ/RfSHTudMArrsrmQ90xgGgdntOd0vch8NzJR7bhTS5qsxYA8mrluqcsvQATG8Xz5QtBRH+SU8Qoz4A==",
+  "dgSpecHash": "PaU1d1etruQwp3knkA6pW0E9XUWFuyp7y8w2d5uwl4RUJ0xQNx2gRYOVmo8eRpfL6aZhaLFbMBQC7KCe1WOOww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Doğan Güneş\\OneDrive\\Masaüstü\\YAZILIM\\#c PROJELERİM\\proje_yazilimyapimi\\proje_yazilimyapimi\\proje_yazilimyapimi.csproj",
+  "projectFilePath": "C:\\Users\\Doğan Güneş\\OneDrive\\Masaüstü\\YAZILIM\\github repolarım\\sınavmoduluproje_repo\\sinavmodulu_proje_yzmypm\\sinavmodulu_proje\\proje_yazilimyapimi\\proje_yazilimyapimi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Doğan Güneş\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Doğan Güneş\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

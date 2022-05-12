@@ -56,7 +56,7 @@ namespace proje_yazilimyapimi
             if (dr.Read())
             {
                
-                MessageBox.Show("Giriþ baþarýlý !");
+                MessageBox.Show("Giriþ baþarýlý!");
                // Form2 gecis = new Form2();
                // gecis.Show();
                // this.Hide();
@@ -71,6 +71,20 @@ namespace proje_yazilimyapimi
             baglanti.Close();
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 gecis = new Form2();
+            gecis.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            sendCode sc = new sendCode();
+            this.Hide();
+            sc.Show();
         }
     }
 }

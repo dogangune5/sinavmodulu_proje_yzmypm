@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,6 +40,8 @@
             this.btnsoruislemleri = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -127,6 +130,7 @@
             this.btnsoruislemleri.TabIndex = 7;
             this.btnsoruislemleri.Text = "tıklayınız";
             this.btnsoruislemleri.UseVisualStyleBackColor = false;
+            this.btnsoruislemleri.Click += new System.EventHandler(this.btnsoruislemleri_Click);
             // 
             // pictureBox3
             // 
@@ -148,12 +152,33 @@
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.ImageKey = "png-clipart-computer-keyboard-backspace-arrow-computer-icons-arrow-cdr-angle-thum" +
+    "bnail.png";
+            this.button1.ImageList = this.ımageList1;
+            this.button1.Location = new System.Drawing.Point(1, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(38, 39);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "png-clipart-computer-keyboard-backspace-arrow-computer-icons-arrow-cdr-angle-thum" +
+        "bnail.png");
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(826, 508);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnsoruislemleri);
@@ -166,6 +191,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form4";
             this.Text = "admingecis";
+            this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -187,5 +213,7 @@
         private Button btnsoruislemleri;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
+        private Button button1;
+        private ImageList ımageList1;
     }
 }
