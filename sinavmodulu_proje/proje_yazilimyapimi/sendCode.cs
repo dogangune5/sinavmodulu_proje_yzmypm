@@ -39,9 +39,9 @@ namespace proje_yazilimyapimi
             
             MailMessage message = new MailMessage();
 
-            from = "dgunes679@gmail.com";
+            from = "havadayokk12@gmail.com";
             
-            pass = "wuhfoN-vuvtev-1xijne";
+            pass = "Dgns2461.";
             
             messageBody = "yenileme kodunuz " + randomCode;
             to = txtEmail.Text;

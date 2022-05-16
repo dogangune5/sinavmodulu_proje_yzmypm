@@ -57,9 +57,9 @@ namespace proje_yazilimyapimi
             {
                
                 MessageBox.Show("Giriþ baþarýlý!");
-               // Form2 gecis = new Form2();
-               // gecis.Show();
-               // this.Hide();
+                sýnavekrani gecis = new sýnavekrani();
+                gecis.Show();
+                this.Hide();
 
 
 
