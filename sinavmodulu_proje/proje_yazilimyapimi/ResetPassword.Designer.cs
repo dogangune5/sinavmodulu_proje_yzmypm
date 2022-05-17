@@ -35,28 +35,26 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtResetPass
             // 
-            this.txtResetPass.Location = new System.Drawing.Point(416, 331);
+            this.txtResetPass.Location = new System.Drawing.Point(467, 166);
             this.txtResetPass.Name = "txtResetPass";
             this.txtResetPass.Size = new System.Drawing.Size(200, 39);
             this.txtResetPass.TabIndex = 0;
             // 
             // txtResetPassVer
             // 
-            this.txtResetPassVer.Location = new System.Drawing.Point(416, 475);
+            this.txtResetPassVer.Location = new System.Drawing.Point(467, 310);
             this.txtResetPassVer.Name = "txtResetPassVer";
             this.txtResetPassVer.Size = new System.Drawing.Size(200, 39);
             this.txtResetPassVer.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.Location = new System.Drawing.Point(366, 583);
+            this.button1.BackColor = System.Drawing.Color.LightGray;
+            this.button1.Location = new System.Drawing.Point(383, 432);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(309, 46);
             this.button1.TabIndex = 2;
@@ -67,7 +65,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(456, 282);
+            this.label1.BackColor = System.Drawing.Color.LightGray;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(311, 169);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 32);
             this.label1.TabIndex = 3;
@@ -75,9 +75,11 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(311, 416);
+            this.label2.BackColor = System.Drawing.Color.LightGray;
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(150, 311);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(420, 38);
+            this.label2.Size = new System.Drawing.Size(272, 38);
             this.label2.TabIndex = 4;
             this.label2.Text = "yeni şifreyi tekrar giriniz";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,33 +87,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Silver;
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(832, 660);
+            this.label3.Location = new System.Drawing.Point(718, 567);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 32);
             this.label3.TabIndex = 5;
             this.label3.Text = "giriş yap";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Orange;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(416, 105);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 137);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // ResetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(1047, 724);
-            this.Controls.Add(this.pictureBox1);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(981, 696);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -122,7 +115,6 @@
             this.Name = "ResetPassword";
             this.Text = "ResetPassorw";
             this.Load += new System.EventHandler(this.ResetPassword_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +128,5 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private PictureBox pictureBox1;
     }
 }

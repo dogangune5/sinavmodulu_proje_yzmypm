@@ -44,7 +44,6 @@ C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmodu
 C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.Form2.resources
 C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.Form3.resources
 C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.Form4.resources
-C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.Form5.resources
 C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.Properties.Resources.resources
 C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.csproj.GenerateResource.cache
 C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.GeneratedMSBuildEditorConfig.editorconfig
@@ -60,3 +59,4 @@ C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmodu
 C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.sendCode.resources
 C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.soruEkle.resources
 C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.sınavekrani.resources
+C:\Users\Doğan Güneş\OneDrive\Masaüstü\YAZILIM\github repolarım\sınavmoduluproje_repo\sinavmodulu_proje_yzmypm\sinavmodulu_proje\proje_yazilimyapimi\obj\Debug\net6.0-windows\proje_yazilimyapimi.kullanici_islemleri.resources

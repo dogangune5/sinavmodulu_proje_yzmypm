@@ -20,21 +20,13 @@ namespace proje_yazilimyapimi
         SqlConnection baglanti;
         SqlDataReader dr;
         SqlCommand komut;
-       
-       
-        
-
-         
-
-
-
-
+ 
         public string conString = "Data Source=DESKTOP-1VQ823J;Initial Catalog=kullanicibilgileri;Integrated Security=True";
         public Form1()
         {
             InitializeComponent();
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -42,7 +34,7 @@ namespace proje_yazilimyapimi
 
         private void btngiris_Click(object sender, EventArgs e)
         {
-
+            // KULLANICININ SÝSTEME GÝRÝÞÝNÝ SAÐLAR 
             string user = txtkullanici.Text;
             string password = txtsifre.Text;
             baglanti = new SqlConnection("Data Source=DESKTOP-1VQ823J;Initial Catalog=kullanicibilgileri;Integrated Security=True");
@@ -55,14 +47,11 @@ namespace proje_yazilimyapimi
             dr = komut.ExecuteReader();
             if (dr.Read())
             {
-               
+               // GÝRÝLEN BÝLGÝLER DOÐRU ÝSE GÝRÝÞ SAÐLANIR
                 MessageBox.Show("Giriþ baþarýlý!");
                 sýnavekrani gecis = new sýnavekrani();
                 gecis.Show();
                 this.Hide();
-
-
-
             }
         else
             {

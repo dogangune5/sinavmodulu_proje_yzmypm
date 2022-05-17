@@ -24,15 +24,18 @@ namespace proje_yazilimyapimi
             InitializeComponent();
         }
 
+        
         private void Form3_Load(object sender, EventArgs e)
         {
             
-        }
+        } 
 
+
+
+        // girilen bilgiler veri tabanı ile kontrol edildikten sonra giriş sağlanıyor
         private void button1_Click(object sender, EventArgs e)
         {
             {
-
                 string user = txtadminadi.Text;
                 string password = txtadminsifre.Text;
                 baglanti = new SqlConnection("Data Source=DESKTOP-1VQ823J;Initial Catalog=kullanicibilgileri;Integrated Security=True");
@@ -45,13 +48,11 @@ namespace proje_yazilimyapimi
                 dr = komut.ExecuteReader();
                 if (dr.Read())
                 {
-
+                    // giriş başarılı ise yeni forma geçiyoruz
                     MessageBox.Show("Giriş başarılı !");
                     Form4 gecis = new Form4();
                     gecis.Show();
                     this.Hide();
-
-
 
                 }
                 else
@@ -63,7 +64,7 @@ namespace proje_yazilimyapimi
 
             }
         }
-
+        // önceki forma dönmek için butonumuz
         private void button2_Click(object sender, EventArgs e)
         {
             Form2 gecis = new Form2();

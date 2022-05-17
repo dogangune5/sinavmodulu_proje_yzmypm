@@ -16,5 +16,20 @@ namespace proje_yazilimyapimi
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 gecis = new Form1();
+            gecis.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+          /*  sinavCozmeEkrani gecis = new sinavCozmeEkrani();
+            gecis.Show();
+            this.Hide(); 
+          */
+        }
     }
 }

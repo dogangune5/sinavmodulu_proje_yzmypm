@@ -39,9 +39,9 @@ namespace proje_yazilimyapimi
             
             MailMessage message = new MailMessage();
 
-            from = "havadayokk12@gmail.com";
+            from = "havadayokk12@gmail.com"; // E MAİL YOLLANYAN ADRES
             
-            pass = "Dgns2461.";
+            pass = "Dgns2461."; // E MAİL YOLLAYAN ADRESİN ŞİFRESİ
             
             messageBody = "yenileme kodunuz " + randomCode;
             to = txtEmail.Text;
@@ -64,57 +64,41 @@ namespace proje_yazilimyapimi
             smtp.Credentials = new NetworkCredential(from, pass);
             
             try
-
-            {
-                
-            smtp.Send(message);
-                
-            MessageBox.Show("kod başarıyla yollandı");
-                
-            }
-            
+            {                
+            smtp.Send(message);               
+            MessageBox.Show("kod başarıyla yollandı");            
+            }     
             catch (Exception ex)
-
-            {
-                
+            {               
             MessageBox.Show(ex.Message);
-                
             }
-
-
-            }
+}
 
         private void button2_Click(object sender, EventArgs e)
         {
             if (randomCode == (txtVerCode.Text).ToString())
-                
-            {
-                
-            to = txtEmail.Text;
-                
-            ResetPassword rp = new ResetPassword();
-               
+            {      
+            to = txtEmail.Text;               
+            ResetPassword rp = new ResetPassword();   
             this.Hide();
-                
-            rp.Show();
-                
-            }
+            rp.Show();           }
             
             else
-                
-            {
-                
-            MessageBox.Show("hatalı kod");
-                
+            {                
+            MessageBox.Show("hatalı kod");               
             }
 
-        }
-
+        }   
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Form1 gecis = new Form1();
+            Form gecis = new Form1();
             gecis.Show();
             this.Hide();
         }
+        
+        private void sendCode_Load(object sender, EventArgs e)
+        {
+
+        } 
     }
 }

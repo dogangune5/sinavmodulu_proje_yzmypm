@@ -11,11 +11,10 @@ using System.Data.SqlClient;
 
 namespace proje_yazilimyapimi
 {
-    public partial class Form5 : Form
+    public partial class Kullanici_islemleri : Form
     {
-
-        
-        public Form5()
+       
+        public Kullanici_islemleri()
         {
             InitializeComponent();
         }
@@ -38,65 +37,54 @@ namespace proje_yazilimyapimi
             baglanti.Close();
         }
 
-        
-        private void Form5_Load(object sender, EventArgs e)
-        {
-            Kullanicigetir();
-        }
 
-        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
+        private void btnEkle_Click(object sender, EventArgs e)
         {
-            txtid.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-             txtkullaniciadikayit.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txtsifrekayit.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            
-        }
-
-        private void btnekle_Click(object sender, EventArgs e)
-        {
-          
             string sorgu = "INSERT INTO newkullanici(username,password) VALUES (@username,@password) ";
-
             komut = new SqlCommand(sorgu, baglanti);
-            komut.Parameters.AddWithValue("@username", txtkullaniciadikayit.Text);
-            komut.Parameters.AddWithValue("@password", txtsifrekayit.Text);
+            komut.Parameters.AddWithValue("@username", txtKullaniciAdi.Text);
+            komut.Parameters.AddWithValue("@password", txtSifre.Text);
             baglanti.Open();
             komut.ExecuteNonQuery();
             baglanti.Close();
             Kullanicigetir();
         }
 
-        private void btnsil_Click(object sender, EventArgs e)
-        { 
-
-
-
-            // where username=@username  ---- id=@id
-            string sorgu = "DELETE FROM newkullanici WHERE username=@username";
-            komut = new SqlCommand(sorgu, baglanti);
-            // @username ----- @id    txtid.text
-            komut.Parameters.AddWithValue("@username",(txtkullaniciadikayit.Text)); 
-            baglanti.Open();
-            komut.ExecuteNonQuery();
-            baglanti.Close();
-            Kullanicigetir();
-        }
-
-        private void btnguncelle_Click(object sender, EventArgs e)
+        private void Kullanici_islemleri_Load(object sender, EventArgs e)
         {
+            Kullanicigetir();
+        }
+        // VERİLER VERİ TABANINDAN ÇEKER 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtID.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+           txtKullaniciAdi.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            txtSifre.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+        }
+        // KULLANICI SİLME İŞLEMLERİNİ GERÇEKLEŞTİRİR
+        private void btnSil_Click(object sender, EventArgs e)
+        {
+            string sorgu = "DELETE FROM newkullanici WHERE id=@id";
+            komut = new SqlCommand(sorgu, baglanti);
 
-            // where username =@username ----- id=@id
+            komut.Parameters.AddWithValue("@id", Convert.ToInt32(txtID.Text));
+            baglanti.Open();
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            Kullanicigetir();
+        }
+        // KULLANICI GÜNCELLEME İŞLEMLERİNİ GERÇEKLEŞTİRİR
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
             string sorgu = "UPDATE newkullanici SET username=@username,password=@password WHERE id=@id";
             komut = new SqlCommand(sorgu, baglanti);
-            komut.Parameters.AddWithValue("@id", Convert.ToInt32(txtid.Text));
-            komut.Parameters.AddWithValue("@username", txtkullaniciadikayit.Text);
-            komut.Parameters.AddWithValue("@password", txtsifrekayit.Text);
+            komut.Parameters.AddWithValue("@id", Convert.ToInt32(txtID.Text));
+            komut.Parameters.AddWithValue("@username", txtKullaniciAdi.Text);
+            komut.Parameters.AddWithValue("@password", txtSifre.Text);
             baglanti.Open();
             komut.ExecuteNonQuery();
             baglanti.Close();
             Kullanicigetir();
-        
-           
         }
 
         private void button1_Click(object sender, EventArgs e)

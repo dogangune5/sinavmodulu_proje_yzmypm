@@ -24,14 +24,16 @@ namespace proje_yazilimyapimi
         {
             InitializeComponent();
         }
-
+        /*
         private void rtxtsoruaciklama_TextChanged(object sender, EventArgs e)
         {
 
-        }
+        } */
 
         private void btnsoruekle_Click(object sender, EventArgs e)
         {
+
+             // resim bağlantımızı sağladıık
             FileStream fileStream = new FileStream(imagepath, FileMode.Open, FileAccess.Read);
             BinaryReader binaryReader = new BinaryReader(fileStream);
             byte[] resimler = binaryReader.ReadBytes((int)fileStream.Length);
@@ -42,7 +44,7 @@ namespace proje_yazilimyapimi
 
 
 
-
+            // veritabanı ile bağlantımızı gerçekleştirdik 
 
             SqlConnection baglanti = new SqlConnection("server=.;Initial Catalog=kullanicibilgileri;Integrated Security=SSPI");
            
@@ -55,7 +57,6 @@ namespace proje_yazilimyapimi
             komut.Parameters.AddWithValue("@Bsikki", txtBsikki.Text);
             komut.Parameters.AddWithValue("@Csikki", txtCsikki.Text);
             komut.Parameters.AddWithValue("@Dsikki", txtDsikki.Text);
-            //  komut.Parameters.AddWithValue("@resim", txtresim.Text);
             komut.Parameters.Add("@resim", SqlDbType.Image,resimler.Length).Value=resimler;
             komut.Parameters.AddWithValue("@sorucevap", comboBox1.Text);
 
@@ -67,13 +68,6 @@ namespace proje_yazilimyapimi
         // resim ekleme butonum
         private void button1_Click(object sender, EventArgs e)
         {
-            /*  openFileDialog1.ShowDialog();
-              pictureBox1.ImageLocation = openFileDialog1.FileName;
-              txtresim.Text = openFileDialog1.FileName; */
-
-
-
-
             openFileDialog1.Title = "Resim Seç";
             openFileDialog1.Filter = " Jpeg Dosyaları(*.jpeg) |*.jpeg|   Jpg Dosyaları(*.jpg)|*.jpg| Png Dosyaları (*png)|*.png| Gif Dosyaları(*.gif)|*.gif| Tif Dosyaları(*.tif) |*.tif";
 

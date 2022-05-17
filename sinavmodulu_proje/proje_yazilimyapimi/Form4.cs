@@ -27,19 +27,17 @@ namespace proje_yazilimyapimi
         }
 
         
-
+        // formlar arası geçiş için butonlarımız
 
         private void btnkullanici_islemleri_Click(object sender, EventArgs e)
-        {
-            // Kullanicigetir();
-            Form5 gecis = new Form5();
+        {        // form arası geçiş butonumuz
+             Kullanici_islemleri gecis = new Kullanici_islemleri();
             gecis.Show();
-            this.Hide();
-
+             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        { // form arası geçiş butonumuz
             Form3 gecis = new Form3();
             gecis.Show();
             this.Hide();
@@ -51,10 +49,11 @@ namespace proje_yazilimyapimi
             this.Hide();
             gecis.Show();
         }
-
+        
         private void Form4_Load(object sender, EventArgs e)
         {
 
-        }
+        } 
+
     }
 }

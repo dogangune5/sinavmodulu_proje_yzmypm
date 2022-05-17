@@ -51,38 +51,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(499, 190);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(573, 124);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 32);
+            this.label1.Size = new System.Drawing.Size(333, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "e mail adresinizi giriniz";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(588, 438);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(662, 372);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 32);
+            this.label2.Size = new System.Drawing.Size(179, 40);
             this.label2.TabIndex = 1;
             this.label2.Text = "codu giriniz";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(557, 261);
+            this.txtEmail.Location = new System.Drawing.Point(631, 195);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(200, 39);
             this.txtEmail.TabIndex = 2;
             // 
             // txtVerCode
             // 
-            this.txtVerCode.Location = new System.Drawing.Point(557, 498);
+            this.txtVerCode.Location = new System.Drawing.Point(631, 434);
             this.txtVerCode.Name = "txtVerCode";
             this.txtVerCode.Size = new System.Drawing.Size(200, 39);
             this.txtVerCode.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(577, 321);
+            this.button1.Location = new System.Drawing.Point(651, 255);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 46);
             this.button1.TabIndex = 4;
@@ -92,7 +94,7 @@
             // 
             // button_2_click
             // 
-            this.button_2_click.Location = new System.Drawing.Point(577, 557);
+            this.button_2_click.Location = new System.Drawing.Point(662, 497);
             this.button_2_click.Name = "button_2_click";
             this.button_2_click.Size = new System.Drawing.Size(150, 46);
             this.button_2_click.TabIndex = 5;
@@ -103,7 +105,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(84, 204);
+            this.pictureBox1.Location = new System.Drawing.Point(158, 138);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(205, 115);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -113,7 +115,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(89, 476);
+            this.pictureBox2.Location = new System.Drawing.Point(163, 410);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(200, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -123,7 +125,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(351, 261);
+            this.pictureBox3.Location = new System.Drawing.Point(425, 195);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(108, 39);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,7 +135,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(351, 498);
+            this.pictureBox4.Location = new System.Drawing.Point(425, 432);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(108, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -163,8 +165,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(1156, 692);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1070, 692);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -178,6 +180,7 @@
             this.Controls.Add(this.label1);
             this.Name = "sendCode";
             this.Text = "sendCode";
+            this.Load += new System.EventHandler(this.sendCode_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

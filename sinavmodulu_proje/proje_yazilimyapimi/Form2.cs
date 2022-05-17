@@ -16,12 +16,15 @@ namespace proje_yazilimyapimi
         {
             InitializeComponent();
         }
-
+        
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
-        }
+        } 
 
+
+
+        // formlar arası geçişler yapıldı
         private void btnadmin_Click(object sender, EventArgs e)
         {
             Form3 gecis = new Form3();
@@ -35,10 +38,10 @@ namespace proje_yazilimyapimi
             gecis.Show();
             this.Hide();
         }
-
+        
         private void Form2_Load(object sender, EventArgs e)
         {
 
-        }
+        } 
     }
 }
